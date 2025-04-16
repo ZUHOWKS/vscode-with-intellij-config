@@ -1,0 +1,66 @@
+{
+  // Apparence & confort
+  "workbench.colorTheme": "SynthWave84",
+  "workbench.iconTheme": "vs-seti",
+  "editor.fontFamily": "JetBrains Mono, Fira Code, Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorBlinking": "smooth",
+  "editor.minimap.enabled": false,
+
+  // Formatage & indentation
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.tabSize": 2,
+
+  // Git
+  "git.autofetch": true,
+  "git.enableCommitSigning": true,
+  "git.blame.editorDecoration.enabled": false,
+  "git.blame.statusBarItem.enabled": true,
+
+  // File handling
+  "files.autoSave": "onFocusChange",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  // Par langage
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[dockerfile]": {
+    "editor.defaultFormatter": "ms-vscode.js-debug"
+  },
+
+  // Divers
+  "terminal.integrated.scrollback": 10000,
+  "explorer.confirmDelete": false,
+  "telemetry.telemetryLevel": "off",
+  "redhat.telemetry.enabled": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.ignoreRebaseWarning": true,
+
+  // Rust-Analyzer
+  "rust-analyzer.check.command": "check",
+  "rust-analyzer.check.allTargets": true,
+  "rust-analyzer.procMacro.enable": true,
+  "rust-analyzer.cargo.autoreload": true,
+  "rust-analyzer.cargo.buildScripts.enable": true,
+  "rust-analyzer.diagnostics.enable": true,
+  "rust-analyzer.lens.enable": true,
+  "git.replaceTagsWhenPull": true,
+  "javascript.updateImportsOnFileMove.enabled": "always"
+}
