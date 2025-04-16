@@ -1,0 +1,118 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+      "key": "ctrl+[Period]",
+      "command": "-breadcrumbs.focus",
+      "when": "breadcrumbsPossible && breadcrumbsVisible"
+  },
+  {
+      "key": "ctrl+[Backslash]",
+      "command": "editor.action.addCommentLine",
+      "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+      "key": "ctrl+k ctrl+c",
+      "command": "-editor.action.addCommentLine",
+      "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+      "key": "ctrl+[Backslash]",
+      "command": "workbench.action.addComment",
+      "when": "activeCursorHasCommentingRange"
+  },
+  {
+      "key": "ctrl+k ctrl+alt+c",
+      "command": "-workbench.action.addComment",
+      "when": "activeCursorHasCommentingRange"
+  },
+  {
+      "key": "ctrl+shift+[Backslash]",
+      "command": "editor.action.removeCommentLine",
+      "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+      "key": "ctrl+k ctrl+u",
+      "command": "-editor.action.removeCommentLine",
+      "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+      "key": "ctrl+f ctrl+o",
+      "command": "workbench.action.terminal.searchWorkspace",
+      "when": "terminalFocus && terminalProcessSupported && terminalTextSelected"
+  },
+  {
+      "key": "ctrl+shift+f",
+      "command": "-workbench.action.terminal.searchWorkspace",
+      "when": "terminalFocus && terminalProcessSupported && terminalTextSelected"
+  },
+  {
+      "key": "ctrl+k ctrl+f",
+      "command": "-editor.action.formatSelection",
+      "when": "editorHasDocumentSelectionFormattingProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+      "key": "ctrl+k ctrl+f",
+      "command": "workbench.action.findInFiles"
+  },
+  {
+      "key": "ctrl+shift+f",
+      "command": "-workbench.action.findInFiles"
+  },
+  {
+      "key": "ctrl+k ctrl+f",
+      "command": "workbench.view.search",
+      "when": "workbench.view.search.active && neverMatch =~ /doesNotMatch/"
+  },
+  {
+      "key": "ctrl+shift+f",
+      "command": "-workbench.view.search",
+      "when": "workbench.view.search.active && neverMatch =~ /doesNotMatch/"
+  },
+  {
+      "key": "ctrl+d",
+      "command": "-editor.action.addSelectionToNextFindMatch",
+      "when": "editorFocus"
+  },
+  {
+      "key": "ctrl+d",
+      "command": "-notebook.addFindMatchToSelection",
+      "when": "config.notebook.multiCursor.enabled && notebookCellEditorFocused && activeEditor == 'workbench.editor.notebook'"
+  },
+  {
+      "key": "ctrl+d",
+      "command": "editor.action.copyLinesDownAction",
+      "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+      "key": "ctrl+shift+alt+down",
+      "command": "-editor.action.copyLinesDownAction",
+      "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+      "key": "ctrl+shift+d",
+      "command": "-workbench.view.debug",
+      "when": "viewContainer.workbench.view.debug.enabled"
+  },
+  {
+      "key": "ctrl+shift+d",
+      "command": "editor.action.copyLinesUpAction",
+      "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+      "key": "ctrl+shift+alt+up",
+      "command": "-editor.action.copyLinesUpAction",
+      "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+      "key": "ctrl+shift+w",
+      "command": "-workbench.action.closeWindow"
+  },
+  {
+      "key": "ctrl+w",
+      "command": "-workbench.action.closeActiveEditor"
+  },
+  {
+      "key": "ctrl+w",
+      "command": "editor.action.smartSelect.grow"
+  },
+]
